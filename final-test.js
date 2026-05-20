@@ -163,9 +163,9 @@ function checkCurrentQuestion() {
     if (q.type === 'multiple' || q.type === 'matching') {
         isCorrect = userAnswer.toLowerCase() === q.correct.toLowerCase();
     } else {
-        const userAnswerNorm = userAnswer.toLowerCase().replace(/\s*\.\.\.\s*/g, ' ... ').replace(/\s+/g, ' ');
+        const userAnswerNorm = userAnswer.toLowerCase().replace(/…/g, '...').replace(/\s*\.\.\.\s*/g, ' ').replace(/\s*\/\s*/g, ' ').replace(/\s*,\s*/g, ' ').replace(/\s+/g, ' ');
         isCorrect = q.accept.some(a => {
-            const aNorm = a.toLowerCase().replace(/\s*\.\.\.\s*/g, ' ... ').replace(/\s+/g, ' ');
+            const aNorm = a.toLowerCase().replace(/…/g, '...').replace(/\s*\.\.\.\s*/g, ' ').replace(/\s*\/\s*/g, ' ').replace(/\s*,\s*/g, ' ').replace(/\s+/g, ' ');
             return aNorm === userAnswerNorm;
         });
     }

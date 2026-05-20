@@ -109,8 +109,8 @@ function checkEx2() {
     ex2Data.forEach(item => {
         const input = document.getElementById(`ex2-${item.id}`);
         const feedback = document.getElementById(`ex2-f${item.id}`);
-        const userAnswer = input.value.trim().toLowerCase().replace(/\s*\.\.\.\s*/g, ' ... ').replace(/\s+/g, ' ');
-        const normalizedAccept = item.accept.map(a => a.toLowerCase().replace(/\s*\.\.\.\s*/g, ' ... ').replace(/\s+/g, ' '));
+        const userAnswer = input.value.trim().toLowerCase().replace(/…/g, '...').replace(/\s*\.\.\.\s*/g, ' ').replace(/\s*\/\s*/g, ' ').replace(/\s*,\s*/g, ' ').replace(/\s+/g, ' ');
+        const normalizedAccept = item.accept.map(a => a.toLowerCase().replace(/…/g, '...').replace(/\s*\.\.\.\s*/g, ' ').replace(/\s*\/\s*/g, ' ').replace(/\s*,\s*/g, ' ').replace(/\s+/g, ' '));
         if (normalizedAccept.includes(userAnswer)) {
             feedback.className = 'feedback correct';
             feedback.textContent = `Corect: ${item.correct}`;
