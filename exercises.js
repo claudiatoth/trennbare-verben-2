@@ -3,6 +3,17 @@
 // Claudia Toth · 5 exerciții A2/B1
 // ============================================
 
+// Helper standard normalizeAnswer (diacritice DE + RO + separatoare)
+function normalizeAnswer(s) {
+    if (!s) return '';
+    return s.toLowerCase().trim()
+        .replace(/ß/g, 'ss').replace(/ä/g, 'ae').replace(/ö/g, 'oe').replace(/ü/g, 'ue')
+        .replace(/[ăâ]/g, 'a').replace(/î/g, 'i').replace(/[șş]/g, 's').replace(/[țţ]/g, 't')
+        .replace(/…/g, '...').replace(/\s*\.\.\.\s*/g, ' ')
+        .replace(/\s*\/\s*/g, ' ').replace(/\s*,\s*/g, ' ')
+        .replace(/\s+/g, ' ').replace(/[.!?;:]/g, '');
+}
+
 // ============================================
 // EXERCIȚIUL 1: Completează prefixul potrivit
 // ============================================
@@ -50,8 +61,8 @@ function checkEx1() {
     ex1Data.forEach(item => {
         const input = document.getElementById(`ex1-${item.id}`);
         const feedback = document.getElementById(`ex1-f${item.id}`);
-        const userAnswer = input.value.trim().toLowerCase().replace(/^-+|-+$/g, '');
-        if (userAnswer === item.correct.toLowerCase()) {
+        const userAnswer = normalizeAnswer(input.value.replace(/^-+|-+$/g, ''));
+        if (userAnswer === normalizeAnswer(item.correct)) {
             feedback.className = 'feedback correct';
             feedback.textContent = `Corect: ${item.correct}`;
             correct++;
@@ -109,8 +120,8 @@ function checkEx2() {
     ex2Data.forEach(item => {
         const input = document.getElementById(`ex2-${item.id}`);
         const feedback = document.getElementById(`ex2-f${item.id}`);
-        const userAnswer = input.value.trim().toLowerCase().replace(/…/g, '...').replace(/\s*\.\.\.\s*/g, ' ').replace(/\s*\/\s*/g, ' ').replace(/\s*,\s*/g, ' ').replace(/\s+/g, ' ');
-        const normalizedAccept = item.accept.map(a => a.toLowerCase().replace(/…/g, '...').replace(/\s*\.\.\.\s*/g, ' ').replace(/\s*\/\s*/g, ' ').replace(/\s*,\s*/g, ' ').replace(/\s+/g, ' '));
+        const userAnswer = normalizeAnswer(input.value);
+        const normalizedAccept = item.accept.map(a => normalizeAnswer(a));
         if (normalizedAccept.includes(userAnswer)) {
             feedback.className = 'feedback correct';
             feedback.textContent = `Corect: ${item.correct}`;
@@ -233,8 +244,8 @@ function checkEx4() {
     ex4Data.forEach(item => {
         const input = document.getElementById(`ex4-${item.id}`);
         const feedback = document.getElementById(`ex4-f${item.id}`);
-        const userAnswer = input.value.trim().toLowerCase().replace(/^-+|-+$/g, '');
-        if (userAnswer === item.correct.toLowerCase()) {
+        const userAnswer = normalizeAnswer(input.value.replace(/^-+|-+$/g, ''));
+        if (userAnswer === normalizeAnswer(item.correct)) {
             feedback.className = 'feedback correct';
             feedback.textContent = `Corect: ${item.correct} — ${item.explanation}`;
             correct++;
@@ -290,8 +301,8 @@ function checkEx5() {
     ex5Data.forEach(item => {
         const input = document.getElementById(`ex5-${item.id}`);
         const feedback = document.getElementById(`ex5-f${item.id}`);
-        const userAnswer = input.value.trim().toLowerCase().replace(/\s+/g, ' ');
-        if (item.accept.some(a => a === userAnswer)) {
+        const userAnswer = normalizeAnswer(input.value);
+        if (item.accept.some(a => normalizeAnswer(a) === userAnswer)) {
             feedback.className = 'feedback correct';
             feedback.textContent = item.correct;
             correct++;

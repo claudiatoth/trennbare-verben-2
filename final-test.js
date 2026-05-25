@@ -159,15 +159,22 @@ function checkCurrentQuestion() {
         feedback.textContent = 'Te rog să răspunzi înainte de verificare!';
         return;
     }
+    // Helper normalize standard (diacritice DE + RO + separatoare)
+    function normalize(s) {
+        if (!s) return '';
+        return s.toLowerCase().trim()
+            .replace(/ß/g, 'ss').replace(/ä/g, 'ae').replace(/ö/g, 'oe').replace(/ü/g, 'ue')
+            .replace(/[ăâ]/g, 'a').replace(/î/g, 'i').replace(/[șş]/g, 's').replace(/[țţ]/g, 't')
+            .replace(/…/g, '...').replace(/\s*\.\.\.\s*/g, ' ')
+            .replace(/\s*\/\s*/g, ' ').replace(/\s*,\s*/g, ' ')
+            .replace(/\s+/g, ' ').replace(/[.!?;:]/g, '');
+    }
     let isCorrect = false;
     if (q.type === 'multiple' || q.type === 'matching') {
-        isCorrect = userAnswer.toLowerCase() === q.correct.toLowerCase();
+        isCorrect = normalize(userAnswer) === normalize(q.correct);
     } else {
-        const userAnswerNorm = userAnswer.toLowerCase().replace(/…/g, '...').replace(/\s*\.\.\.\s*/g, ' ').replace(/\s*\/\s*/g, ' ').replace(/\s*,\s*/g, ' ').replace(/\s+/g, ' ');
-        isCorrect = q.accept.some(a => {
-            const aNorm = a.toLowerCase().replace(/…/g, '...').replace(/\s*\.\.\.\s*/g, ' ').replace(/\s*\/\s*/g, ' ').replace(/\s*,\s*/g, ' ').replace(/\s+/g, ' ');
-            return aNorm === userAnswerNorm;
-        });
+        const userAnswerNorm = normalize(userAnswer);
+        isCorrect = q.accept.some(a => normalize(a) === userAnswerNorm);
     }
     userAnswers[currentQuestionIndex] = { answer: userAnswer, correct: isCorrect, checked: true };
     displayFeedback(currentQuestionIndex);
