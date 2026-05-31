@@ -1,8 +1,8 @@
 # Audio pentru Trennbare Verben (Teil 2) — A2/B1
 
-## 🎙️ Vocea Claudiei (teorie — 8 MP3)
+## 🎙️ Vocea Claudiei (teorie — 9 MP3)
 
-Pune aici 8 MP3-uri cu **exact aceste nume**. Folderul e momentan gol — până încarci fișierele, butoanele ▶ vor afișa un mesaj „audio lipsește".
+Pune aici 9 MP3-uri cu **exact aceste nume**. Folderul e momentan gol — până încarci fișierele, butoanele ▶ vor afișa un mesaj „audio lipsește".
 
 | # | Fișier | Subsecțiune |
 |---|---|---|
@@ -13,7 +13,8 @@ Pune aici 8 MP3-uri cu **exact aceste nume**. Folderul e momentan gol — până
 | 5 | `05-nach-weiter.mp3` | Prefixele nach- și weiter- |
 | 6 | `06-weg-zurueck.mp3` | Prefixele weg- și zurück- |
 | 7 | `07-hin-her-zusammen.mp3` | Prefixele hin- / her- / zusammen- |
-| 8 | `08-dialog.mp3` | Dialogul „Andreeas erster Tag bei Annette" *(opțional — există deja TTS browser)* |
+| 8 | `08-substantive.mp3` | Substantive derivate Sg + Pl (8 substantive: der Vorschlag/die Vorschläge etc.) |
+| 9 | `09-dialog.mp3` | Dialogul „Andreas erster Tag bei Annette" *(opțional — există deja TTS browser)* |
 
 ## 📥 Cum încarci fișierele
 

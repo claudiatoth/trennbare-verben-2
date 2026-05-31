@@ -355,6 +355,14 @@ const theoryHTML = `
             <span class="sub-arrow">▼</span>
         </div>
         <div class="sub-section-content" id="sub-section-7">
+            <div class="lesson-audio">
+                <div class="audio-player">
+                    <button class="audio-btn" onclick="toggleAudio(event, 'audio-7')" id="btn-audio-7">▶</button>
+                    <audio id="audio-7" preload="none"><source src="audio/08-substantive.mp3" type="audio/mpeg"></audio>
+                </div>
+                <span class="lesson-audio-label">🔊 Ascultă secțiunea</span>
+            </div>
+
             <div class="andreea-note">
                 <img src="images/andreea.png" alt="Andreea" class="andreea-note-avatar">
                 <div class="andreea-note-content">
@@ -441,7 +449,7 @@ const theoryHTML = `
             <div class="lesson-audio">
                 <div class="audio-player">
                     <button class="audio-btn" onclick="toggleAudio(event, 'audio-8')" id="btn-audio-8">▶</button>
-                    <audio id="audio-8" preload="none"><source src="audio/08-dialog.mp3" type="audio/mpeg"></audio>
+                    <audio id="audio-8" preload="none"><source src="audio/09-dialog.mp3" type="audio/mpeg"></audio>
                 </div>
                 <span class="lesson-audio-label">🔊 Ascultă dialogul (MP3, după ce înregistrezi)</span>
             </div>
