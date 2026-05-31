@@ -454,14 +454,22 @@ const theoryHTML = `
 
             <p style="margin-bottom: 15px;"><em>Andreea sosește la cursul lui Annette pentru prima zi de practică pedagogică. Annette o întâmpină și o introduce în echipă. Dialogul folosește peste 10 prefixe din lecția 2.</em></p>
 
+            <div class="andreea-note">
+                <img src="images/andreea.png" alt="Andreea" class="andreea-note-avatar">
+                <div class="andreea-note-content">
+                    <div class="speaker">Andreea îți spune:</div>
+                    <div class="text">În acest dialog Annette îmi spune <strong>„Andrea"</strong> — așa se pronunță numele meu în germană (forma locală a numelui „Andreea"). În România sunt Andreea, în Germania devin Andrea. Același nume, doar pronunție germană (3 silabe: <em>An-DRE-a</em>). 🦋</div>
+                </div>
+            </div>
+
             <div style="background: #dbeafe; border-left: 4px solid #3b82f6; padding: 15px 20px; border-radius: 6px; margin-bottom: 10px;">
-                <p><strong style="color: #1e3a8a;">Annette:</strong> Hallo Andreea! Willkommen bei Annettes Deutschkurs! Darf ich mich <u>vorstellen</u>? Ich bin Annette, deine Mentorin. <button onclick="speakDialogLine(event, 0)" title="Ascultă" style="background:#3b82f6;color:white;border:none;border-radius:50%;width:30px;height:30px;cursor:pointer;font-size:13px;margin-left:4px;vertical-align:middle;">🔊</button></p>
-                <p style="color: #6b7280; font-style: italic; font-size: 0.9rem;">Salut, Andreea! Bun venit la cursul lui Annette! Îmi permiteți să mă prezint? Eu sunt Annette, mentora ta. (<em>sich vorstellen</em>)</p>
+                <p><strong style="color: #1e3a8a;">Annette:</strong> Hallo Andrea! Willkommen bei Annettes Deutschkurs! Darf ich mich <u>vorstellen</u>? Ich bin Annette, deine Mentorin. <button onclick="speakDialogLine(event, 0)" title="Ascultă" style="background:#3b82f6;color:white;border:none;border-radius:50%;width:30px;height:30px;cursor:pointer;font-size:13px;margin-left:4px;vertical-align:middle;">🔊</button></p>
+                <p style="color: #6b7280; font-style: italic; font-size: 0.9rem;">Salut, Andrea! Bun venit la cursul lui Annette! Îmi permiteți să mă prezint? Eu sunt Annette, mentora ta. (<em>sich vorstellen</em>)</p>
             </div>
 
             <div style="background: #f0fdf4; border-left: 4px solid #10b981; padding: 15px 20px; border-radius: 6px; margin-bottom: 10px;">
-                <p><strong style="color: #065f46;">Andreea:</strong> Hallo Annette! Ich bin Andreea. Ich habe meinen Laptop und ein Notizbuch <u>mitgebracht</u>. <button onclick="speakDialogLine(event, 1)" title="Ascultă" style="background:#10b981;color:white;border:none;border-radius:50%;width:30px;height:30px;cursor:pointer;font-size:13px;margin-left:4px;vertical-align:middle;">🔊</button></p>
-                <p style="color: #6b7280; font-style: italic; font-size: 0.9rem;">Salut, Annette! Eu sunt Andreea. Am adus laptopul și un caiet. (<em>mitbringen</em>)</p>
+                <p><strong style="color: #065f46;">Andrea:</strong> Hallo Annette! Ich bin Andrea. Ich habe meinen Laptop und ein Notizbuch <u>mitgebracht</u>. <button onclick="speakDialogLine(event, 1)" title="Ascultă" style="background:#10b981;color:white;border:none;border-radius:50%;width:30px;height:30px;cursor:pointer;font-size:13px;margin-left:4px;vertical-align:middle;">🔊</button></p>
+                <p style="color: #6b7280; font-style: italic; font-size: 0.9rem;">Salut, Annette! Eu sunt Andrea. Am adus laptopul și un caiet. (<em>mitbringen</em>)</p>
             </div>
 
             <div style="background: #dbeafe; border-left: 4px solid #3b82f6; padding: 15px 20px; border-radius: 6px; margin-bottom: 10px;">
@@ -470,7 +478,7 @@ const theoryHTML = `
             </div>
 
             <div style="background: #f0fdf4; border-left: 4px solid #10b981; padding: 15px 20px; border-radius: 6px; margin-bottom: 10px;">
-                <p><strong style="color: #065f46;">Andreea:</strong> Gerne. Darf ich einen Kaffee <u>mitnehmen</u>? <button onclick="speakDialogLine(event, 3)" title="Ascultă" style="background:#10b981;color:white;border:none;border-radius:50%;width:30px;height:30px;cursor:pointer;font-size:13px;margin-left:4px;vertical-align:middle;">🔊</button></p>
+                <p><strong style="color: #065f46;">Andrea:</strong> Gerne. Darf ich einen Kaffee <u>mitnehmen</u>? <button onclick="speakDialogLine(event, 3)" title="Ascultă" style="background:#10b981;color:white;border:none;border-radius:50%;width:30px;height:30px;cursor:pointer;font-size:13px;margin-left:4px;vertical-align:middle;">🔊</button></p>
                 <p style="color: #6b7280; font-style: italic; font-size: 0.9rem;">Cu plăcere. Pot să iau o cafea cu mine? (<em>mitnehmen</em>)</p>
             </div>
 
@@ -480,17 +488,17 @@ const theoryHTML = `
             </div>
 
             <div style="background: #f0fdf4; border-left: 4px solid #10b981; padding: 15px 20px; border-radius: 6px; margin-bottom: 10px;">
-                <p><strong style="color: #065f46;">Andreea:</strong> Danke. Wann fangen wir an? <button onclick="speakDialogLine(event, 5)" title="Ascultă" style="background:#10b981;color:white;border:none;border-radius:50%;width:30px;height:30px;cursor:pointer;font-size:13px;margin-left:4px;vertical-align:middle;">🔊</button></p>
+                <p><strong style="color: #065f46;">Andrea:</strong> Danke. Wann fangen wir an? <button onclick="speakDialogLine(event, 5)" title="Ascultă" style="background:#10b981;color:white;border:none;border-radius:50%;width:30px;height:30px;cursor:pointer;font-size:13px;margin-left:4px;vertical-align:middle;">🔊</button></p>
                 <p style="color: #6b7280; font-style: italic; font-size: 0.9rem;">Mulțumesc. Când începem?</p>
             </div>
 
             <div style="background: #dbeafe; border-left: 4px solid #3b82f6; padding: 15px 20px; border-radius: 6px; margin-bottom: 10px;">
-                <p><strong style="color: #1e3a8a;">Annette:</strong> Um 9. Wir <u>arbeiten zusammen</u> an der ersten Lektion. <button onclick="speakDialogLine(event, 6)" title="Ascultă" style="background:#3b82f6;color:white;border:none;border-radius:50%;width:30px;height:30px;cursor:pointer;font-size:13px;margin-left:4px;vertical-align:middle;">🔊</button></p>
-                <p style="color: #6b7280; font-style: italic; font-size: 0.9rem;">La 9. Lucrăm împreună la prima lecție. (<em>zusammenarbeiten</em>)</p>
+                <p><strong style="color: #1e3a8a;">Annette:</strong> Um neun Uhr. Wir <u>arbeiten zusammen</u> an der ersten Lektion. <button onclick="speakDialogLine(event, 6)" title="Ascultă" style="background:#3b82f6;color:white;border:none;border-radius:50%;width:30px;height:30px;cursor:pointer;font-size:13px;margin-left:4px;vertical-align:middle;">🔊</button></p>
+                <p style="color: #6b7280; font-style: italic; font-size: 0.9rem;">La nouă. Lucrăm împreună la prima lecție. (<em>zusammenarbeiten</em>)</p>
             </div>
 
             <div style="background: #f0fdf4; border-left: 4px solid #10b981; padding: 15px 20px; border-radius: 6px; margin-bottom: 10px;">
-                <p><strong style="color: #065f46;">Andreea:</strong> Und wenn ich eine Frage habe? <button onclick="speakDialogLine(event, 7)" title="Ascultă" style="background:#10b981;color:white;border:none;border-radius:50%;width:30px;height:30px;cursor:pointer;font-size:13px;margin-left:4px;vertical-align:middle;">🔊</button></p>
+                <p><strong style="color: #065f46;">Andrea:</strong> Und wenn ich eine Frage habe? <button onclick="speakDialogLine(event, 7)" title="Ascultă" style="background:#10b981;color:white;border:none;border-radius:50%;width:30px;height:30px;cursor:pointer;font-size:13px;margin-left:4px;vertical-align:middle;">🔊</button></p>
                 <p style="color: #6b7280; font-style: italic; font-size: 0.9rem;">Și dacă am o întrebare?</p>
             </div>
 
@@ -500,7 +508,7 @@ const theoryHTML = `
             </div>
 
             <div style="background: #f0fdf4; border-left: 4px solid #10b981; padding: 15px 20px; border-radius: 6px; margin-bottom: 10px;">
-                <p><strong style="color: #065f46;">Andreea:</strong> Perfekt. Was <u>hast</u> du heute noch <u>vor</u>? <button onclick="speakDialogLine(event, 9)" title="Ascultă" style="background:#10b981;color:white;border:none;border-radius:50%;width:30px;height:30px;cursor:pointer;font-size:13px;margin-left:4px;vertical-align:middle;">🔊</button></p>
+                <p><strong style="color: #065f46;">Andrea:</strong> Perfekt. Was <u>hast</u> du heute noch <u>vor</u>? <button onclick="speakDialogLine(event, 9)" title="Ascultă" style="background:#10b981;color:white;border:none;border-radius:50%;width:30px;height:30px;cursor:pointer;font-size:13px;margin-left:4px;vertical-align:middle;">🔊</button></p>
                 <p style="color: #6b7280; font-style: italic; font-size: 0.9rem;">Perfect. Ce mai ai de gând azi? (<em>vorhaben</em>)</p>
             </div>
 
@@ -510,7 +518,7 @@ const theoryHTML = `
             </div>
 
             <div style="background: #f0fdf4; border-left: 4px solid #10b981; padding: 15px 20px; border-radius: 6px; margin-bottom: 10px;">
-                <p><strong style="color: #065f46;">Andreea:</strong> Ich <u>mache weiter</u>, dann. Bis 17 Uhr! <button onclick="speakDialogLine(event, 11)" title="Ascultă" style="background:#10b981;color:white;border:none;border-radius:50%;width:30px;height:30px;cursor:pointer;font-size:13px;margin-left:4px;vertical-align:middle;">🔊</button></p>
+                <p><strong style="color: #065f46;">Andrea:</strong> Ich <u>mache weiter</u>, dann. Bis 17 Uhr! <button onclick="speakDialogLine(event, 11)" title="Ascultă" style="background:#10b981;color:white;border:none;border-radius:50%;width:30px;height:30px;cursor:pointer;font-size:13px;margin-left:4px;vertical-align:middle;">🔊</button></p>
                 <p style="color: #6b7280; font-style: italic; font-size: 0.9rem;">Atunci continui. Pe la 17! (<em>weitermachen</em>)</p>
             </div>
 
@@ -547,18 +555,18 @@ document.addEventListener('DOMContentLoaded', function() {
 // DIALOG TTS
 // ============================================
 const dialogLines = [
-    "Hallo Andreea! Willkommen bei Annettes Deutschkurs! Darf ich mich vorstellen? Ich bin Annette, deine Mentorin.",
-    "Hallo Annette! Ich bin Andreea. Ich habe meinen Laptop und ein Notizbuch mitgebracht.",
+    "Hallo Andrea! Willkommen bei Annettes Deutschkurs! Darf ich mich vorstellen? Ich bin Annette, deine Mentorin.",
+    "Hallo Annette! Ich bin Andrea. Ich habe meinen Laptop und ein Notizbuch mitgebracht.",
     "Super. Komm bitte mit, ich zeige dir den Unterrichtsraum.",
     "Gerne. Darf ich einen Kaffee mitnehmen?",
     "Natürlich! Die Küche ist da hinten. Geh hin, rechts ist die Maschine.",
     "Danke. Wann fangen wir an?",
-    "Um 9. Wir arbeiten zusammen an der ersten Lektion.",
+    "Um neun Uhr. Wir arbeiten zusammen an der ersten Lektion.",
     "Und wenn ich eine Frage habe?",
     "Frag einfach nach! Ich bin deine Mentorin. Oder ruf mich an.",
     "Perfekt. Was hast du heute noch vor?",
-    "Um 17 Uhr gehen wir alle zurück zur Besprechung. Denk bitte daran nach, dass du deinen Stundenplan mitbringst.",
-    "Ich mache weiter, dann. Bis 17 Uhr!",
+    "Um siebzehn Uhr gehen wir alle zurück zur Besprechung. Denk bitte daran nach, dass du deinen Stundenplan mitbringst.",
+    "Ich mache weiter, dann. Bis siebzehn Uhr!",
     "Bis später!"
 ];
 
