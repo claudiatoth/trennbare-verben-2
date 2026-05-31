@@ -381,9 +381,9 @@ function checkEx6() {
 const ex7Data = [
     { id: 'a', text: 'Ich komme um 8 Uhr zurück.', accept: ['Ich komme um 8 Uhr zurück.', 'Ich komme um acht Uhr zurück.'] },
     { id: 'b', text: 'Bring bitte den Laptop mit!', accept: ['Bring bitte den Laptop mit!', 'Bringe bitte den Laptop mit!'] },
-    { id: 'c', text: 'Hör mir bitte zu, Andreea!', accept: ['Hör mir bitte zu, Andreea!', 'Höre mir bitte zu, Andreea!', 'Hoer mir bitte zu, Andreea!'] },
+    { id: 'c', text: 'Hör mir bitte zu, Mihai!', accept: ['Hör mir bitte zu, Mihai!', 'Höre mir bitte zu, Mihai!', 'Hoer mir bitte zu, Mihai!'] },
     { id: 'd', text: 'Wir arbeiten heute an der Lektion 2 zusammen.', accept: ['Wir arbeiten heute an der Lektion 2 zusammen.', 'Wir arbeiten heute an der Lektion zwei zusammen.'] },
-    { id: 'e', text: 'Komm her, ich zeige dir das Buch!', accept: ['Komm her, ich zeige dir das Buch!'] }
+    { id: 'e', text: 'Bring mir das Buch her!', accept: ['Bring mir das Buch her!', 'Bringe mir das Buch her!'] }
 ];
 
 function buildEx7() {
