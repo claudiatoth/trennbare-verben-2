@@ -1,6 +1,7 @@
 // ============================================
 // TEORIE - TRENNBARE VERBEN (TEIL 2)
-// Claudia Toth · Nivel A2/B1 · Prefixele secundare vor-, zu-, mit-, nach-, weiter-, weg-, zurück-, hin-/her-, zusammen-
+// Claudia Toth · Annettes Deutschkurs · A2/B1
+// Refactor mai 2026: cast personaje + Andreea narator + Substantive Sg+Pl (regula 13)
 // ============================================
 
 const theoryHTML = `
@@ -18,6 +19,15 @@ const theoryHTML = `
                 </div>
                 <span class="lesson-audio-label">🔊 Ascultă secțiunea</span>
             </div>
+
+            <div class="andreea-note">
+                <img src="images/andreea.png" alt="Andreea" class="andreea-note-avatar">
+                <div class="andreea-note-content">
+                    <div class="speaker">Andreea îți spune:</div>
+                    <div class="text">Bine ai venit la <em>Teil 2</em>! La Teil 1 am învățat cele mai uzuale 8 prefixe (an-, auf-, aus-, ein-, mit-, ab-, zu-, vor-). Acum extindem cu încă <strong>9 prefixe secundare</strong> foarte folosite în vorbirea zilnică. Cea mai dificilă pereche e <strong>hin / her</strong> — o explic detaliat în secțiunea 7. 🦋</div>
+                </div>
+            </div>
+
             <div class="theory-box">
                 <h4>📖 Recapitulare din lecția 1</h4>
                 <ul>
@@ -117,6 +127,14 @@ const theoryHTML = `
                     <li><strong>Particulă infinitiv</strong>: „Ich versuche, zu arbeiten."</li>
                 </ul>
             </div>
+
+            <div class="andreea-note">
+                <img src="images/andreea.png" alt="Andreea" class="andreea-note-avatar">
+                <div class="andreea-note-content">
+                    <div class="speaker">Andreea îți spune:</div>
+                    <div class="text">Cum recunosc rapid care „zu" e prefix și care prepoziție? <strong>Verifică verbul</strong>: dacă verbul tău e <em>hören, machen, stimmen, sehen, geben, nehmen</em> + zu pleacă la sfârșit → e PREFIX SEPARABIL. Dacă vine <em>zu + (articol) + substantiv</em> („zu meiner Mutter") → e PREPOZIȚIE cu Dativ. Dacă apare <em>„zu" lângă un infinitiv</em> („Ich versuche zu arbeiten") → e PARTICULĂ. 🦋</div>
+                </div>
+            </div>
         </div>
     </div>
 
@@ -154,6 +172,14 @@ const theoryHTML = `
             <div class="theory-box" style="background: #dbeafe; border-color: #3b82f6;">
                 <h4>💡 Frază foarte utilă</h4>
                 <p><strong>„Kommst du mit?"</strong> = Vii cu noi/mine? — una dintre cele mai frecvente întrebări uzuale în germană.</p>
+            </div>
+
+            <div class="andreea-note">
+                <img src="images/andreea.png" alt="Andreea" class="andreea-note-avatar">
+                <div class="andreea-note-content">
+                    <div class="speaker">Andreea îți spune:</div>
+                    <div class="text">La prima zi de practică la Annette am auzit nonstop „<em>Kommst du mit?</em>" și „<em>Komm mit!</em>". E echivalentul nostru „Vii și tu?" — sună uzual, prietenos, NU oficial. Răspuns: „<em>Ja, ich komme mit.</em>" sau „<em>Nein, ich komme nicht mit.</em>" (cu „nicht" la sfârșit, înaintea prefixului!). 🦋</div>
+                </div>
             </div>
         </div>
     </div>
@@ -250,6 +276,14 @@ const theoryHTML = `
                     <tr><td class="verb">zurückschicken</td><td>a trimite înapoi</td><td><em>Ich schicke das Paket zurück.</em></td></tr>
                 </tbody>
             </table>
+
+            <div class="andreea-note">
+                <img src="images/andreea.png" alt="Andreea" class="andreea-note-avatar">
+                <div class="andreea-note-content">
+                    <div class="speaker">Andreea îți spune:</div>
+                    <div class="text">Memorizează perechea <strong>weggehen ↔ zurückkommen</strong> ca o monedă cu două fețe: <em>„Ich gehe um 8 weg und komme um 18 Uhr zurück."</em> (Plec la 8 și mă întorc la 18.) Verb diferit pentru fiecare direcție — germana NU folosește același verb pentru ambele sensuri. Capcană pentru români! 🦋</div>
+                </div>
+            </div>
         </div>
     </div>
 
@@ -276,6 +310,14 @@ const theoryHTML = `
                     <li><strong>Komm her!</strong> = Vino aici! (spre mine)</li>
                     <li><strong>Geh hin!</strong> = Du-te acolo! (departe de mine)</li>
                 </ul>
+            </div>
+
+            <div class="andreea-note">
+                <img src="images/andreea.png" alt="Andreea" class="andreea-note-avatar">
+                <div class="andreea-note-content">
+                    <div class="speaker">Andreea îți spune:</div>
+                    <div class="text">Pentru români asta e cea mai grea capcană. La noi spunem „<em>Vino aici!</em>" sau „<em>Du-te acolo!</em>" cu același verb (a veni / a duce) și schimbăm doar adverbul. La germani <strong>verbul nu se schimbă</strong> (komm / geh), dar particula <strong>hin / her</strong> e OBLIGATORIE. Trucul meu: gândește-te la o săgeată. Aici stau EU (vorbitor) → săgeata vine SPRE mine = <strong>her</strong>. Săgeata pleacă DE LA mine = <strong>hin</strong>. Verifică mereu de unde pleacă mișcarea. 🦋</div>
+                </div>
             </div>
 
             <table class="theory-table">
@@ -306,17 +348,100 @@ const theoryHTML = `
         </div>
     </div>
 
-    <!-- 7: Dialog + strategii -->
+    <!-- 7: Substantive derivate (Sg + Pl + RO la AMBELE — regula 13) -->
     <div class="sub-section">
         <div class="sub-section-header" onclick="toggleSubSection(7)">
-            <span>💬 8. Dialog: Der erste Arbeitstag + strategii</span>
+            <span>📦 8. Substantive derivate din verbele separabile (Sg + Pl)</span>
             <span class="sub-arrow">▼</span>
         </div>
         <div class="sub-section-content" id="sub-section-7">
+            <div class="andreea-note">
+                <img src="images/andreea.png" alt="Andreea" class="andreea-note-avatar">
+                <div class="andreea-note-content">
+                    <div class="speaker">Andreea îți spune:</div>
+                    <div class="text">Verbele separabile generează SUBSTANTIVE pe care le auzi des: <em>der Vorschlag</em> (propunerea), <em>die Mitarbeit</em> (colaborarea), <em>die Rückkehr</em> (întoarcerea). Învață-le cu pluralul de la început — regula germană: <strong>NU există substantiv fără gen și fără plural</strong>. Câteva sunt <em>nur Singular</em> (substantive abstracte ca <em>Zusammenarbeit</em>) — îți spun în tabel când. 🦋</div>
+                </div>
+            </div>
+
+            <div class="theory-box">
+                <h4>📦 8 substantive cheie — Singular + Plural + traducere RO</h4>
+                <table class="theory-table">
+                    <thead><tr><th>Singular</th><th>Plural</th><th>Traducere RO (Sg / Pl)</th><th>Vine de la</th></tr></thead>
+                    <tbody>
+                        <tr>
+                            <td class="nomen">der Vorschlag</td>
+                            <td class="nomen">die Vorschläge</td>
+                            <td class="ro-text">propunerea / propunerile</td>
+                            <td><em>vorschlagen</em> (a propune)</td>
+                        </tr>
+                        <tr>
+                            <td class="nomen">die Vorbereitung</td>
+                            <td class="nomen">die Vorbereitungen</td>
+                            <td class="ro-text">pregătirea / pregătirile</td>
+                            <td><em>vorbereiten</em> (a pregăti)</td>
+                        </tr>
+                        <tr>
+                            <td class="nomen">der Mitarbeiter</td>
+                            <td class="nomen">die Mitarbeiter</td>
+                            <td class="ro-text">colegul / colegii (de muncă)</td>
+                            <td><em>mitarbeiten</em> (a colabora)</td>
+                        </tr>
+                        <tr>
+                            <td class="nomen">die Mitteilung</td>
+                            <td class="nomen">die Mitteilungen</td>
+                            <td class="ro-text">mesajul, comunicarea / -ele</td>
+                            <td><em>mitteilen</em> (a comunica)</td>
+                        </tr>
+                        <tr>
+                            <td class="nomen">der Zuhörer</td>
+                            <td class="nomen">die Zuhörer</td>
+                            <td class="ro-text">ascultătorul / ascultătorii</td>
+                            <td><em>zuhören</em> (a asculta atent)</td>
+                        </tr>
+                        <tr>
+                            <td class="nomen">der Vortrag</td>
+                            <td class="nomen">die Vorträge</td>
+                            <td class="ro-text">prezentarea / prezentările</td>
+                            <td><em>vortragen</em> (a prezenta)</td>
+                        </tr>
+                        <tr>
+                            <td class="nomen">die Rückkehr</td>
+                            <td class="nomen"><em style="color:#9ca3af;">(nur Singular)</em></td>
+                            <td class="ro-text">întoarcerea (substantiv abstract, fără plural)</td>
+                            <td><em>zurückkehren</em> (a se întoarce)</td>
+                        </tr>
+                        <tr>
+                            <td class="nomen">die Zusammenarbeit</td>
+                            <td class="nomen"><em style="color:#9ca3af;">(nur Singular)</em></td>
+                            <td class="ro-text">colaborarea (substantiv abstract, fără plural)</td>
+                            <td><em>zusammenarbeiten</em> (a colabora)</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="theory-box" style="background: #dbeafe; border-color: #3b82f6;">
+                <h4>💡 Pattern de formare</h4>
+                <ul>
+                    <li>Prefix + verb la infinitiv → substantiv (gen masculin): <em>vorschlagen → der Vorschlag</em>, <em>vortragen → der Vortrag</em>.</li>
+                    <li>Prefix + verb + sufix <strong>-ung</strong> → substantiv feminin (-ungen la plural): <em>vorbereiten → die Vorbereitung</em>, <em>mitteilen → die Mitteilung</em>.</li>
+                    <li>Prefix + verb + sufix <strong>-er</strong> → substantiv masculin (persoană, plural identic): <em>mitarbeiten → der Mitarbeiter</em>, <em>zuhören → der Zuhörer</em>.</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- 8: Dialog Annette + Andreea (refactorizat) -->
+    <div class="sub-section">
+        <div class="sub-section-header" onclick="toggleSubSection(8)">
+            <span>💬 9. Dialog: Andreeas erster Tag bei Annette + strategii</span>
+            <span class="sub-arrow">▼</span>
+        </div>
+        <div class="sub-section-content" id="sub-section-8">
             <div class="lesson-audio">
                 <div class="audio-player">
-                    <button class="audio-btn" onclick="toggleAudio(event, 'audio-7')" id="btn-audio-7">▶</button>
-                    <audio id="audio-7" preload="none"><source src="audio/08-dialog.mp3" type="audio/mpeg"></audio>
+                    <button class="audio-btn" onclick="toggleAudio(event, 'audio-8')" id="btn-audio-8">▶</button>
+                    <audio id="audio-8" preload="none"><source src="audio/08-dialog.mp3" type="audio/mpeg"></audio>
                 </div>
                 <span class="lesson-audio-label">🔊 Ascultă dialogul (MP3, după ce înregistrezi)</span>
             </div>
@@ -327,84 +452,84 @@ const theoryHTML = `
                 <small style="color:#6b7280;">Click pe 🔊 lângă orice replică pentru a o asculta individual.</small>
             </div>
 
-            <p style="margin-bottom: 15px;"><em>Prima zi la muncă — Peter (coleg) o primește pe Anna (nouă) și îi arată biroul. Dialogul folosește peste 10 prefixe din lecția 2.</em></p>
+            <p style="margin-bottom: 15px;"><em>Andreea sosește la cursul lui Annette pentru prima zi de practică pedagogică. Annette o întâmpină și o introduce în echipă. Dialogul folosește peste 10 prefixe din lecția 2.</em></p>
 
             <div style="background: #dbeafe; border-left: 4px solid #3b82f6; padding: 15px 20px; border-radius: 6px; margin-bottom: 10px;">
-                <p><strong style="color: #1e3a8a;">Peter:</strong> Hallo Anna! Willkommen im Team! Darf ich mich <u>vorstellen</u>? Ich bin Peter. <button onclick="speakDialogLine(event, 0)" title="Ascultă" style="background:#3b82f6;color:white;border:none;border-radius:50%;width:30px;height:30px;cursor:pointer;font-size:13px;margin-left:4px;vertical-align:middle;">🔊</button></p>
-                <p style="color: #6b7280; font-style: italic; font-size: 0.9rem;">Salut Anna! Bine ai venit în echipă! Îmi permiteți să mă prezint? Eu sunt Peter. (<em>sich vorstellen</em>)</p>
+                <p><strong style="color: #1e3a8a;">Annette:</strong> Hallo Andreea! Willkommen bei Annettes Deutschkurs! Darf ich mich <u>vorstellen</u>? Ich bin Annette, deine Mentorin. <button onclick="speakDialogLine(event, 0)" title="Ascultă" style="background:#3b82f6;color:white;border:none;border-radius:50%;width:30px;height:30px;cursor:pointer;font-size:13px;margin-left:4px;vertical-align:middle;">🔊</button></p>
+                <p style="color: #6b7280; font-style: italic; font-size: 0.9rem;">Salut, Andreea! Bun venit la cursul lui Annette! Îmi permiteți să mă prezint? Eu sunt Annette, mentora ta. (<em>sich vorstellen</em>)</p>
             </div>
 
             <div style="background: #f0fdf4; border-left: 4px solid #10b981; padding: 15px 20px; border-radius: 6px; margin-bottom: 10px;">
-                <p><strong style="color: #065f46;">Anna:</strong> Hallo Peter! Ich bin Anna. Ich habe meinen Laptop <u>mitgebracht</u>. <button onclick="speakDialogLine(event, 1)" title="Ascultă" style="background:#10b981;color:white;border:none;border-radius:50%;width:30px;height:30px;cursor:pointer;font-size:13px;margin-left:4px;vertical-align:middle;">🔊</button></p>
-                <p style="color: #6b7280; font-style: italic; font-size: 0.9rem;">Salut Peter! Eu sunt Anna. Mi-am adus laptopul. (<em>mitbringen</em>)</p>
+                <p><strong style="color: #065f46;">Andreea:</strong> Hallo Annette! Ich bin Andreea. Ich habe meinen Laptop und ein Notizbuch <u>mitgebracht</u>. <button onclick="speakDialogLine(event, 1)" title="Ascultă" style="background:#10b981;color:white;border:none;border-radius:50%;width:30px;height:30px;cursor:pointer;font-size:13px;margin-left:4px;vertical-align:middle;">🔊</button></p>
+                <p style="color: #6b7280; font-style: italic; font-size: 0.9rem;">Salut, Annette! Eu sunt Andreea. Am adus laptopul și un caiet. (<em>mitbringen</em>)</p>
             </div>
 
             <div style="background: #dbeafe; border-left: 4px solid #3b82f6; padding: 15px 20px; border-radius: 6px; margin-bottom: 10px;">
-                <p><strong style="color: #1e3a8a;">Peter:</strong> Super. <u>Komm</u> bitte <u>mit</u>, ich zeige dir dein Büro. <button onclick="speakDialogLine(event, 2)" title="Ascultă" style="background:#3b82f6;color:white;border:none;border-radius:50%;width:30px;height:30px;cursor:pointer;font-size:13px;margin-left:4px;vertical-align:middle;">🔊</button></p>
-                <p style="color: #6b7280; font-style: italic; font-size: 0.9rem;">Super. Vino cu mine, te rog, îți arăt biroul. (<em>mitkommen</em>)</p>
+                <p><strong style="color: #1e3a8a;">Annette:</strong> Super. <u>Komm</u> bitte <u>mit</u>, ich zeige dir den Unterrichtsraum. <button onclick="speakDialogLine(event, 2)" title="Ascultă" style="background:#3b82f6;color:white;border:none;border-radius:50%;width:30px;height:30px;cursor:pointer;font-size:13px;margin-left:4px;vertical-align:middle;">🔊</button></p>
+                <p style="color: #6b7280; font-style: italic; font-size: 0.9rem;">Super. Vino cu mine, te rog, îți arăt sala de curs. (<em>mitkommen</em>)</p>
             </div>
 
             <div style="background: #f0fdf4; border-left: 4px solid #10b981; padding: 15px 20px; border-radius: 6px; margin-bottom: 10px;">
-                <p><strong style="color: #065f46;">Anna:</strong> Gerne. Darf ich einen Kaffee <u>mitnehmen</u>? <button onclick="speakDialogLine(event, 3)" title="Ascultă" style="background:#10b981;color:white;border:none;border-radius:50%;width:30px;height:30px;cursor:pointer;font-size:13px;margin-left:4px;vertical-align:middle;">🔊</button></p>
+                <p><strong style="color: #065f46;">Andreea:</strong> Gerne. Darf ich einen Kaffee <u>mitnehmen</u>? <button onclick="speakDialogLine(event, 3)" title="Ascultă" style="background:#10b981;color:white;border:none;border-radius:50%;width:30px;height:30px;cursor:pointer;font-size:13px;margin-left:4px;vertical-align:middle;">🔊</button></p>
                 <p style="color: #6b7280; font-style: italic; font-size: 0.9rem;">Cu plăcere. Pot să iau o cafea cu mine? (<em>mitnehmen</em>)</p>
             </div>
 
             <div style="background: #dbeafe; border-left: 4px solid #3b82f6; padding: 15px 20px; border-radius: 6px; margin-bottom: 10px;">
-                <p><strong style="color: #1e3a8a;">Peter:</strong> Natürlich! Die Küche ist da hinten. <u>Geh</u> hinein, rechts ist die Maschine. <button onclick="speakDialogLine(event, 4)" title="Ascultă" style="background:#3b82f6;color:white;border:none;border-radius:50%;width:30px;height:30px;cursor:pointer;font-size:13px;margin-left:4px;vertical-align:middle;">🔊</button></p>
-                <p style="color: #6b7280; font-style: italic; font-size: 0.9rem;">Sigur! Bucătăria e în spate. Intră, în dreapta e aparatul. (<em>hineingehen</em>)</p>
+                <p><strong style="color: #1e3a8a;">Annette:</strong> Natürlich! Die Küche ist da hinten. <u>Geh</u> hin, rechts ist die Maschine. <button onclick="speakDialogLine(event, 4)" title="Ascultă" style="background:#3b82f6;color:white;border:none;border-radius:50%;width:30px;height:30px;cursor:pointer;font-size:13px;margin-left:4px;vertical-align:middle;">🔊</button></p>
+                <p style="color: #6b7280; font-style: italic; font-size: 0.9rem;">Sigur! Bucătăria e în spate. Du-te acolo, în dreapta e aparatul. (<em>hingehen</em>)</p>
             </div>
 
             <div style="background: #f0fdf4; border-left: 4px solid #10b981; padding: 15px 20px; border-radius: 6px; margin-bottom: 10px;">
-                <p><strong style="color: #065f46;">Anna:</strong> Danke. Wann fangen wir an? <button onclick="speakDialogLine(event, 5)" title="Ascultă" style="background:#10b981;color:white;border:none;border-radius:50%;width:30px;height:30px;cursor:pointer;font-size:13px;margin-left:4px;vertical-align:middle;">🔊</button></p>
+                <p><strong style="color: #065f46;">Andreea:</strong> Danke. Wann fangen wir an? <button onclick="speakDialogLine(event, 5)" title="Ascultă" style="background:#10b981;color:white;border:none;border-radius:50%;width:30px;height:30px;cursor:pointer;font-size:13px;margin-left:4px;vertical-align:middle;">🔊</button></p>
                 <p style="color: #6b7280; font-style: italic; font-size: 0.9rem;">Mulțumesc. Când începem?</p>
             </div>
 
             <div style="background: #dbeafe; border-left: 4px solid #3b82f6; padding: 15px 20px; border-radius: 6px; margin-bottom: 10px;">
-                <p><strong style="color: #1e3a8a;">Peter:</strong> Um 9. Wir <u>arbeiten zusammen</u> am ersten Projekt. <button onclick="speakDialogLine(event, 6)" title="Ascultă" style="background:#3b82f6;color:white;border:none;border-radius:50%;width:30px;height:30px;cursor:pointer;font-size:13px;margin-left:4px;vertical-align:middle;">🔊</button></p>
-                <p style="color: #6b7280; font-style: italic; font-size: 0.9rem;">La 9. Lucrăm împreună la primul proiect. (<em>zusammenarbeiten</em>)</p>
+                <p><strong style="color: #1e3a8a;">Annette:</strong> Um 9. Wir <u>arbeiten zusammen</u> an der ersten Lektion. <button onclick="speakDialogLine(event, 6)" title="Ascultă" style="background:#3b82f6;color:white;border:none;border-radius:50%;width:30px;height:30px;cursor:pointer;font-size:13px;margin-left:4px;vertical-align:middle;">🔊</button></p>
+                <p style="color: #6b7280; font-style: italic; font-size: 0.9rem;">La 9. Lucrăm împreună la prima lecție. (<em>zusammenarbeiten</em>)</p>
             </div>
 
             <div style="background: #f0fdf4; border-left: 4px solid #10b981; padding: 15px 20px; border-radius: 6px; margin-bottom: 10px;">
-                <p><strong style="color: #065f46;">Anna:</strong> Und wenn ich eine Frage habe? <button onclick="speakDialogLine(event, 7)" title="Ascultă" style="background:#10b981;color:white;border:none;border-radius:50%;width:30px;height:30px;cursor:pointer;font-size:13px;margin-left:4px;vertical-align:middle;">🔊</button></p>
+                <p><strong style="color: #065f46;">Andreea:</strong> Und wenn ich eine Frage habe? <button onclick="speakDialogLine(event, 7)" title="Ascultă" style="background:#10b981;color:white;border:none;border-radius:50%;width:30px;height:30px;cursor:pointer;font-size:13px;margin-left:4px;vertical-align:middle;">🔊</button></p>
                 <p style="color: #6b7280; font-style: italic; font-size: 0.9rem;">Și dacă am o întrebare?</p>
             </div>
 
             <div style="background: #dbeafe; border-left: 4px solid #3b82f6; padding: 15px 20px; border-radius: 6px; margin-bottom: 10px;">
-                <p><strong style="color: #1e3a8a;">Peter:</strong> <u>Frag</u> mich <u>nach</u>! Ich bin dein Mentor. Oder <u>ruf</u> mich einfach <u>an</u>. <button onclick="speakDialogLine(event, 8)" title="Ascultă" style="background:#3b82f6;color:white;border:none;border-radius:50%;width:30px;height:30px;cursor:pointer;font-size:13px;margin-left:4px;vertical-align:middle;">🔊</button></p>
-                <p style="color: #6b7280; font-style: italic; font-size: 0.9rem;">Întreabă-mă! Sunt mentorul tău. Sau sună-mă pur și simplu. (<em>nachfragen, anrufen</em>)</p>
+                <p><strong style="color: #1e3a8a;">Annette:</strong> <u>Frag</u> einfach <u>nach</u>! Ich bin deine Mentorin. Oder <u>ruf</u> mich <u>an</u>. <button onclick="speakDialogLine(event, 8)" title="Ascultă" style="background:#3b82f6;color:white;border:none;border-radius:50%;width:30px;height:30px;cursor:pointer;font-size:13px;margin-left:4px;vertical-align:middle;">🔊</button></p>
+                <p style="color: #6b7280; font-style: italic; font-size: 0.9rem;">Întreabă pur și simplu! Sunt mentora ta. Sau sună-mă. (<em>nachfragen, anrufen</em>)</p>
             </div>
 
             <div style="background: #f0fdf4; border-left: 4px solid #10b981; padding: 15px 20px; border-radius: 6px; margin-bottom: 10px;">
-                <p><strong style="color: #065f46;">Anna:</strong> Perfekt. Was <u>hast</u> du heute noch <u>vor</u>? <button onclick="speakDialogLine(event, 9)" title="Ascultă" style="background:#10b981;color:white;border:none;border-radius:50%;width:30px;height:30px;cursor:pointer;font-size:13px;margin-left:4px;vertical-align:middle;">🔊</button></p>
+                <p><strong style="color: #065f46;">Andreea:</strong> Perfekt. Was <u>hast</u> du heute noch <u>vor</u>? <button onclick="speakDialogLine(event, 9)" title="Ascultă" style="background:#10b981;color:white;border:none;border-radius:50%;width:30px;height:30px;cursor:pointer;font-size:13px;margin-left:4px;vertical-align:middle;">🔊</button></p>
                 <p style="color: #6b7280; font-style: italic; font-size: 0.9rem;">Perfect. Ce mai ai de gând azi? (<em>vorhaben</em>)</p>
             </div>
 
             <div style="background: #dbeafe; border-left: 4px solid #3b82f6; padding: 15px 20px; border-radius: 6px; margin-bottom: 10px;">
-                <p><strong style="color: #1e3a8a;">Peter:</strong> Um 17 Uhr gehen wir alle <u>zurück</u> zur Besprechung. <u>Denk</u> bitte daran <u>nach</u>, dass du deinen Ausweis <u>mitbringst</u>. <button onclick="speakDialogLine(event, 10)" title="Ascultă" style="background:#3b82f6;color:white;border:none;border-radius:50%;width:30px;height:30px;cursor:pointer;font-size:13px;margin-left:4px;vertical-align:middle;">🔊</button></p>
-                <p style="color: #6b7280; font-style: italic; font-size: 0.9rem;">La 17 ne întoarcem cu toții la ședință. Gândește-te, te rog, să-ți aduci legitimația. (<em>zurückgehen, nachdenken, mitbringen</em>)</p>
+                <p><strong style="color: #1e3a8a;">Annette:</strong> Um 17 Uhr gehen wir alle <u>zurück</u> zur Besprechung. <u>Denk</u> bitte daran <u>nach</u>, dass du deinen Stundenplan <u>mitbringst</u>. <button onclick="speakDialogLine(event, 10)" title="Ascultă" style="background:#3b82f6;color:white;border:none;border-radius:50%;width:30px;height:30px;cursor:pointer;font-size:13px;margin-left:4px;vertical-align:middle;">🔊</button></p>
+                <p style="color: #6b7280; font-style: italic; font-size: 0.9rem;">La 17 ne întoarcem cu toții la ședință. Gândește-te, te rog, să-ți aduci orarul. (<em>zurückgehen, nachdenken, mitbringen</em>)</p>
             </div>
 
             <div style="background: #f0fdf4; border-left: 4px solid #10b981; padding: 15px 20px; border-radius: 6px; margin-bottom: 10px;">
-                <p><strong style="color: #065f46;">Anna:</strong> Ich <u>mache weiter</u>, dann. Bis 17 Uhr! <button onclick="speakDialogLine(event, 11)" title="Ascultă" style="background:#10b981;color:white;border:none;border-radius:50%;width:30px;height:30px;cursor:pointer;font-size:13px;margin-left:4px;vertical-align:middle;">🔊</button></p>
+                <p><strong style="color: #065f46;">Andreea:</strong> Ich <u>mache weiter</u>, dann. Bis 17 Uhr! <button onclick="speakDialogLine(event, 11)" title="Ascultă" style="background:#10b981;color:white;border:none;border-radius:50%;width:30px;height:30px;cursor:pointer;font-size:13px;margin-left:4px;vertical-align:middle;">🔊</button></p>
                 <p style="color: #6b7280; font-style: italic; font-size: 0.9rem;">Atunci continui. Pe la 17! (<em>weitermachen</em>)</p>
             </div>
 
             <div style="background: #dbeafe; border-left: 4px solid #3b82f6; padding: 15px 20px; border-radius: 6px; margin-bottom: 10px;">
-                <p><strong style="color: #1e3a8a;">Peter:</strong> Bis später! <button onclick="speakDialogLine(event, 12)" title="Ascultă" style="background:#3b82f6;color:white;border:none;border-radius:50%;width:30px;height:30px;cursor:pointer;font-size:13px;margin-left:4px;vertical-align:middle;">🔊</button></p>
+                <p><strong style="color: #1e3a8a;">Annette:</strong> Bis später! <button onclick="speakDialogLine(event, 12)" title="Ascultă" style="background:#3b82f6;color:white;border:none;border-radius:50%;width:30px;height:30px;cursor:pointer;font-size:13px;margin-left:4px;vertical-align:middle;">🔊</button></p>
                 <p style="color: #6b7280; font-style: italic; font-size: 0.9rem;">Pe mai târziu!</p>
             </div>
 
             <div class="theory-box" style="background: #dbeafe; border-color: #3b82f6; margin-top: 20px;">
                 <h4>🗝️ Verbe separabile cu prefixe din lecția 2 folosite în dialog</h4>
-                <p><strong>sich vorstellen</strong> (a se prezenta), <strong>mitbringen</strong> (a aduce cu), <strong>mitkommen</strong> (a veni cu), <strong>mitnehmen</strong> (a lua cu), <strong>hineingehen</strong> (a intra), <strong>zusammenarbeiten</strong> (a colabora), <strong>nachfragen</strong> (a întreba), <strong>vorhaben</strong> (a plănui), <strong>zurückgehen</strong> (a merge înapoi), <strong>nachdenken</strong> (a reflecta), <strong>weitermachen</strong> (a continua).</p>
+                <p><strong>sich vorstellen</strong> (a se prezenta), <strong>mitbringen</strong> (a aduce cu), <strong>mitkommen</strong> (a veni cu), <strong>mitnehmen</strong> (a lua cu), <strong>hingehen</strong> (a se duce acolo), <strong>zusammenarbeiten</strong> (a colabora), <strong>nachfragen</strong> (a întreba), <strong>anrufen</strong> (a suna), <strong>vorhaben</strong> (a plănui), <strong>zurückgehen</strong> (a merge înapoi), <strong>nachdenken</strong> (a reflecta), <strong>weitermachen</strong> (a continua).</p>
             </div>
 
             <div class="theory-box">
-                <h4>🔑 Strategii</h4>
+                <h4>🔑 Strategii de învățare</h4>
                 <ul>
-                    <li><strong>Învață pe situații:</strong> birou (vorstellen, mitbringen, zusammenarbeiten), călătorie (mitfahren, zurückkommen, weitergehen), familie (mithelfen, zuhören, vorlesen).</li>
-                    <li><strong>Perechi cheie:</strong> hin ↔ her, vor ↔ zurück, weg ↔ zurück.</li>
-                    <li><strong>Memorizare:</strong> „Komm <em>mit</em>!" și „Komm <em>her</em>!" sunt printre cele mai frecvente cereri în germană. Memorează-le cu voce tare.</li>
+                    <li><strong>Învață pe situații:</strong> birou/curs (vorstellen, mitbringen, zusammenarbeiten), călătorie (mitfahren, zurückkommen, weitergehen), familie (mithelfen, zuhören, vorlesen).</li>
+                    <li><strong>Perechi cheie opuse:</strong> hin ↔ her, vor ↔ zurück, weg ↔ zurück, mitkommen ↔ zurückbleiben.</li>
+                    <li><strong>Memorizare vocală:</strong> „Komm <em>mit</em>!" și „Komm <em>her</em>!" sunt printre cele mai frecvente cereri în germană. Memorează-le cu voce tare.</li>
                 </ul>
             </div>
         </div>
@@ -422,17 +547,17 @@ document.addEventListener('DOMContentLoaded', function() {
 // DIALOG TTS
 // ============================================
 const dialogLines = [
-    "Hallo Anna! Willkommen im Team! Darf ich mich vorstellen? Ich bin Peter.",
-    "Hallo Peter! Ich bin Anna. Ich habe meinen Laptop mitgebracht.",
-    "Super. Komm bitte mit, ich zeige dir dein Büro.",
+    "Hallo Andreea! Willkommen bei Annettes Deutschkurs! Darf ich mich vorstellen? Ich bin Annette, deine Mentorin.",
+    "Hallo Annette! Ich bin Andreea. Ich habe meinen Laptop und ein Notizbuch mitgebracht.",
+    "Super. Komm bitte mit, ich zeige dir den Unterrichtsraum.",
     "Gerne. Darf ich einen Kaffee mitnehmen?",
-    "Natürlich! Die Küche ist da hinten. Geh hinein, rechts ist die Maschine.",
+    "Natürlich! Die Küche ist da hinten. Geh hin, rechts ist die Maschine.",
     "Danke. Wann fangen wir an?",
-    "Um 9. Wir arbeiten zusammen am ersten Projekt.",
+    "Um 9. Wir arbeiten zusammen an der ersten Lektion.",
     "Und wenn ich eine Frage habe?",
-    "Frag mich nach! Ich bin dein Mentor. Oder ruf mich einfach an.",
+    "Frag einfach nach! Ich bin deine Mentorin. Oder ruf mich an.",
     "Perfekt. Was hast du heute noch vor?",
-    "Um 17 Uhr gehen wir alle zurück zur Besprechung. Denk bitte daran nach, dass du deinen Ausweis mitbringst.",
+    "Um 17 Uhr gehen wir alle zurück zur Besprechung. Denk bitte daran nach, dass du deinen Stundenplan mitbringst.",
     "Ich mache weiter, dann. Bis 17 Uhr!",
     "Bis später!"
 ];

@@ -314,6 +314,145 @@ function checkEx5() {
     return { correct, total };
 }
 
+// ============================================
+// EXERCIȚIUL 6: Perfekt cu „-ge-" la mijloc (verbe TARE și MIXTE)
+// ============================================
+const ex6Data = [
+    { id: 'a', sentence: 'Ich habe einen Kaffee ______. (mitnehmen)', correct: 'mitgenommen', hint: 'verb TARE: nahm/genommen → mitgenommen' },
+    { id: 'b', sentence: 'Sie hat ein Buch ______. (mitbringen)', correct: 'mitgebracht', hint: 'verb MIXT: brachte/gebracht → mitgebracht (-t!)' },
+    { id: 'c', sentence: 'Wir haben über das Problem ______. (nachdenken)', correct: 'nachgedacht', hint: 'verb MIXT: dachte/gedacht → nachgedacht' },
+    { id: 'd', sentence: 'Er hat mir das Buch ______. (zurückgeben)', correct: 'zurückgegeben', hint: 'verb TARE: gab/gegeben → zurückgegeben' },
+    { id: 'e', sentence: 'Ich bin um 18 Uhr ______. (zurückkommen)', correct: 'zurückgekommen', hint: 'verb TARE + SEIN: kam/gekommen → zurückgekommen' },
+    { id: 'f', sentence: 'Anna hat ihre Kollegen ______. (vorstellen)', correct: 'vorgestellt', hint: 'verb SLAB: stellte/gestellt → vorgestellt' },
+    { id: 'g', sentence: 'Ich habe ihm gut ______. (zuhören)', correct: 'zugehört', hint: 'verb SLAB + DATIV: hörte/gehört → zugehört (ihm, NU ihn!)' },
+    { id: 'h', sentence: 'Du hast ein gutes Buch ______. (vorschlagen)', correct: 'vorgeschlagen', hint: 'verb TARE: schlug/geschlagen → vorgeschlagen' },
+    { id: 'i', sentence: 'Wir sind nach München ______. (weiterfahren)', correct: 'weitergefahren', hint: 'verb TARE + SEIN: fuhr/gefahren → weitergefahren' },
+    { id: 'j', sentence: 'Mihai hat den Müll ______. (wegwerfen)', correct: 'weggeworfen', hint: 'verb TARE: warf/geworfen → weggeworfen' }
+];
+
+function buildEx6() {
+    const container = document.getElementById('ex6-container');
+    if (!container) return;
+    let html = `
+        <div class="exercise-instruction">
+            <strong>📝 Completează cu Partizip II (forma de Perfekt).</strong><br>
+            La verbele separabile, „-ge-" se pune <strong>ÎNTRE prefix și verb</strong>: vor + ge + stellt → <em>vorgestellt</em>.
+        </div>
+    `;
+    ex6Data.forEach((item, index) => {
+        html += `
+            <div class="exercise-item">
+                <span class="exercise-number">${index + 1}</span>
+                <div class="input-group">
+                    <label>${item.sentence}</label>
+                    <input type="text" id="ex6-${item.id}" placeholder="Partizip II">
+                    <small style="color: #6b7280; font-style: italic;">💬 ${item.hint}</small>
+                </div>
+                <div class="feedback" id="ex6-f${item.id}"></div>
+            </div>
+        `;
+    });
+    container.innerHTML = html;
+}
+
+function checkEx6() {
+    let correct = 0;
+    const total = ex6Data.length;
+    ex6Data.forEach(item => {
+        const input = document.getElementById(`ex6-${item.id}`);
+        const feedback = document.getElementById(`ex6-f${item.id}`);
+        const userAnswer = normalizeAnswer(input.value);
+        if (userAnswer === normalizeAnswer(item.correct)) {
+            feedback.className = 'feedback correct';
+            feedback.textContent = `Corect: ${item.correct}`;
+            correct++;
+        } else {
+            feedback.className = 'feedback incorrect';
+            feedback.textContent = `Corect: ${item.correct}`;
+        }
+    });
+    return { correct, total };
+}
+
+// ============================================
+// EXERCIȚIUL 7: Diktat — ascultă propoziția și scrie-o
+// (Regula 17: accept cifră alternativă, e.g. „6" sau „sechs")
+// ============================================
+const ex7Data = [
+    { id: 'a', text: 'Ich komme um 8 Uhr zurück.', accept: ['Ich komme um 8 Uhr zurück.', 'Ich komme um acht Uhr zurück.'] },
+    { id: 'b', text: 'Bring bitte den Laptop mit!', accept: ['Bring bitte den Laptop mit!', 'Bringe bitte den Laptop mit!'] },
+    { id: 'c', text: 'Hör mir bitte zu, Andreea!', accept: ['Hör mir bitte zu, Andreea!', 'Höre mir bitte zu, Andreea!', 'Hoer mir bitte zu, Andreea!'] },
+    { id: 'd', text: 'Wir arbeiten heute an der Lektion 2 zusammen.', accept: ['Wir arbeiten heute an der Lektion 2 zusammen.', 'Wir arbeiten heute an der Lektion zwei zusammen.'] },
+    { id: 'e', text: 'Komm her, ich zeige dir das Buch!', accept: ['Komm her, ich zeige dir das Buch!'] }
+];
+
+function buildEx7() {
+    const container = document.getElementById('ex7-container');
+    if (!container) return;
+    let html = `
+        <div class="exercise-instruction">
+            <strong>🎧 Diktat — ascultă și scrie ce auzi.</strong><br>
+            Apasă 🔊 pentru fiecare propoziție. Scrie EXACT ce auzi, cu majuscule, punctuație și semne de exclamare/întrebare.<br>
+            <em>(Cifrele pot fi scrise în litere sau cifre — ex. „8 Uhr" SAU „acht Uhr".)</em>
+        </div>
+    `;
+    ex7Data.forEach((item, index) => {
+        html += `
+            <div class="exercise-item">
+                <span class="exercise-number">${index + 1}</span>
+                <div class="input-group">
+                    <label>
+                        <button onclick="speakDictation(event, '${item.id}')" style="background:#10b981;color:white;border:none;border-radius:50%;width:38px;height:38px;cursor:pointer;font-size:1.1rem;vertical-align:middle;margin-right:8px;">🔊</button>
+                        Propoziția ${index + 1} — click pe 🔊 ca să o asculți
+                    </label>
+                    <input type="text" id="ex7-${item.id}" placeholder="Scrie propoziția cu majuscule și punctuație...">
+                </div>
+                <div class="feedback" id="ex7-f${item.id}"></div>
+            </div>
+        `;
+    });
+    container.innerHTML = html;
+}
+
+function speakDictation(event, id) {
+    if (event) event.stopPropagation();
+    const item = ex7Data.find(x => x.id === id);
+    if (!item) return;
+    if ('speechSynthesis' in window) {
+        window.speechSynthesis.cancel();
+        const u = new SpeechSynthesisUtterance(item.text);
+        u.lang = 'de-DE';
+        u.rate = 0.85;
+        window.speechSynthesis.speak(u);
+    } else {
+        alert('Browser-ul tău nu suportă Text-to-Speech.');
+    }
+}
+
+function checkEx7() {
+    let correct = 0;
+    const total = ex7Data.length;
+    // Pentru Diktat folosim comparare STRICTĂ (cu majuscule + punctuație + caractere DE) — NU normalizeAnswer (care omoară diacriticele).
+    function normalizeDiktat(s) {
+        return (s || '').trim().replace(/\s+/g, ' ');
+    }
+    ex7Data.forEach(item => {
+        const input = document.getElementById(`ex7-${item.id}`);
+        const feedback = document.getElementById(`ex7-f${item.id}`);
+        const userAnswer = normalizeDiktat(input.value);
+        const accepted = item.accept.some(a => normalizeDiktat(a) === userAnswer);
+        if (accepted) {
+            feedback.className = 'feedback correct';
+            feedback.textContent = `Corect: ${item.text}`;
+            correct++;
+        } else {
+            feedback.className = 'feedback incorrect';
+            feedback.textContent = `Corect: ${item.text}`;
+        }
+    });
+    return { correct, total };
+}
+
 // BUILD
 document.addEventListener('DOMContentLoaded', function() {
     buildEx1();
@@ -321,4 +460,6 @@ document.addEventListener('DOMContentLoaded', function() {
     buildEx3();
     buildEx4();
     buildEx5();
+    buildEx6();
+    buildEx7();
 });

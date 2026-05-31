@@ -188,6 +188,8 @@ function checkExercise(num) {
         case 3: result = checkEx3(); break;
         case 4: result = checkEx4(); break;
         case 5: result = checkEx5(); break;
+        case 6: result = checkEx6(); break;
+        case 7: result = checkEx7(); break;
         default: return;
     }
     
@@ -282,6 +284,30 @@ function resetExercise(num) {
             ex5Data.forEach(item => {
                 const el = document.getElementById(`ex5-${item.id}`);
                 const fb = document.getElementById(`ex5-f${item.id}`);
+                if (el) el.value = '';
+                if (fb) {
+                    fb.className = 'feedback';
+                    fb.textContent = '';
+                }
+            });
+            break;
+        case 6:
+            // Ex6 - text inputs (Perfekt)
+            ex6Data.forEach(item => {
+                const el = document.getElementById(`ex6-${item.id}`);
+                const fb = document.getElementById(`ex6-f${item.id}`);
+                if (el) el.value = '';
+                if (fb) {
+                    fb.className = 'feedback';
+                    fb.textContent = '';
+                }
+            });
+            break;
+        case 7:
+            // Ex7 - Diktat
+            ex7Data.forEach(item => {
+                const el = document.getElementById(`ex7-${item.id}`);
+                const fb = document.getElementById(`ex7-f${item.id}`);
                 if (el) el.value = '';
                 if (fb) {
                     fb.className = 'feedback';

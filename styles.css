@@ -1214,3 +1214,101 @@ body {
         -webkit-overflow-scrolling: touch !important;
     }
 }
+
+/* ============================================
+   CAST BANNER — 6 personaje compacte la început
+   (60×80 WEB · 50×50 PDF — vezi pdf.html)
+   ============================================ */
+.cast-banner {
+    background: linear-gradient(135deg, #ecfdf5 0%, #d1fae5 100%);
+    border: 2px solid #10B981;
+    border-radius: 12px;
+    padding: 16px;
+    margin: 20px 0;
+    text-align: center;
+}
+.cast-banner h4 {
+    color: #065f46;
+    margin: 0 0 12px;
+    font-size: 1.1rem;
+}
+.cast-grid {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 8px;
+    max-width: 720px;
+    margin: 0 auto;
+}
+.cast-card {
+    background: #fff;
+    border-radius: 8px;
+    padding: 8px 4px;
+    text-align: center;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.06);
+}
+.cast-card img {
+    width: 60px;
+    height: 80px;
+    object-fit: contain;
+    display: block;
+    margin: 0 auto 4px;
+}
+.cast-card .name {
+    font-size: 0.72rem;
+    font-weight: 700;
+    color: #065f46;
+    line-height: 1.2;
+}
+.cast-card .detail {
+    font-size: 0.65rem;
+    color: #6b7280;
+    line-height: 1.2;
+    margin-top: 2px;
+}
+
+/* ============================================
+   ANDREEA-NOTE — căsuța galbenă cu Andreea co-narator
+   Avatar 44×56 (regula 15: imagini sub 100px)
+   ============================================ */
+.andreea-note {
+    background: #fffbeb;
+    border-left: 4px solid #f59e0b;
+    border-radius: 0 8px 8px 0;
+    padding: 14px 18px;
+    margin: 16px 0;
+    display: flex;
+    gap: 14px;
+    align-items: flex-start;
+}
+.andreea-note-avatar {
+    width: 44px;
+    height: 56px;
+    object-fit: contain;
+    flex-shrink: 0;
+}
+.andreea-note-content {
+    flex: 1;
+}
+.andreea-note-content .speaker {
+    font-weight: 700;
+    color: #92400e;
+    font-size: 0.88rem;
+    margin-bottom: 4px;
+}
+.andreea-note-content .speaker::before {
+    content: "💚 ";
+}
+.andreea-note-content .text {
+    color: #78350f;
+    font-size: 0.95rem;
+    font-style: italic;
+    line-height: 1.6;
+}
+
+/* CAST + ANDREEA mobile responsive */
+@media (max-width: 768px) {
+    .cast-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .andreea-note-avatar { width: 36px; height: 46px; }
+}

@@ -1,5 +1,7 @@
 # Audio pentru Trennbare Verben (Teil 2) — A2/B1
 
+## 🎙️ Vocea Claudiei (teorie — 8 MP3)
+
 Pune aici 8 MP3-uri cu **exact aceste nume**. Folderul e momentan gol — până încarci fișierele, butoanele ▶ vor afișa un mesaj „audio lipsește".
 
 | # | Fișier | Subsecțiune |
@@ -11,7 +13,7 @@ Pune aici 8 MP3-uri cu **exact aceste nume**. Folderul e momentan gol — până
 | 5 | `05-nach-weiter.mp3` | Prefixele nach- și weiter- |
 | 6 | `06-weg-zurueck.mp3` | Prefixele weg- și zurück- |
 | 7 | `07-hin-her-zusammen.mp3` | Prefixele hin- / her- / zusammen- |
-| 8 | `08-dialog.mp3` | Dialogul „Der erste Arbeitstag" *(opțional — există deja TTS browser)* |
+| 8 | `08-dialog.mp3` | Dialogul „Andreeas erster Tag bei Annette" *(opțional — există deja TTS browser)* |
 
 ## 📥 Cum încarci fișierele
 
@@ -19,9 +21,15 @@ Pune aici 8 MP3-uri cu **exact aceste nume**. Folderul e momentan gol — până
 
 **Varianta locală:** Le pui în `E:\Date Asus\...\trennbare-verben-2\audio\` și-mi spui să fac commit + push.
 
-## 🎙️ Voci recomandate (TTSMaker)
+## 🤖 Audio Hedda pregenerat (flashcards — 50 WAV)
+
+Folderul `cards/` conține 50 fișiere WAV pre-generate cu vocea Hedda (Windows TTS Microsoft Hedda Desktop). Sunt declanșate de butonul 🔊 din carduri și funcționează direct.
+
+Maparea fișiere → cuvânt e definită în `flashcards.js` (atributul `audio:` din fiecare card).
+
+## 🎙️ Voci recomandate pentru MP3 (TTSMaker — dacă vrei voci alternative)
 
 - **Sander-DE Germany Female** (voce 290, nelimitat) — narator feminin
 - **Killian-DE Germany Male** (voce 120095, 3000 char/conv) — narator masculin
 
-Pentru dialog cu voci alternante (Anna + Peter), pot să-ți rescriu codul ca să folosească 13 fragmente separate (`08-01.mp3` … `08-13.mp3`) — spune-mi.
+Pentru dialog cu voci alternante (Annette + Andreea), pot să-ți rescriu codul ca să folosească 13 fragmente separate (`08-01.mp3` … `08-13.mp3`) — spune-mi.

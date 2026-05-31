@@ -9,8 +9,8 @@
     function buildPDF() {
         const root = document.getElementById('pdf-content');
         if (!root) return;
-        // Lecție suplimentară A2 — NU are verbs.js, deci skip buildVerbs.
-        root.innerHTML = buildCast() + buildTheory() + buildExercises() + buildFlashcards();
+        // Refactor mai 2026 — include verbs.js (Annettes pattern)
+        root.innerHTML = buildCast() + buildTheory() + buildExercises() + buildFlashcards() + buildVerbs();
     }
 
     function buildCast() {
