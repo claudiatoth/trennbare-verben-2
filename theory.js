@@ -439,101 +439,22 @@ const theoryHTML = `
         </div>
     </div>
 
-    <!-- 8: Dialog Annette + Andreea (refactorizat) -->
+    <!-- 8: Dialog Annette + Andrea (animat — pattern Pflege) -->
     <div class="sub-section">
         <div class="sub-section-header" onclick="toggleSubSection(8)">
-            <span>💬 9. Dialog: Andreeas erster Tag bei Annette + strategii</span>
+            <span>🎬 9. Dialog animat: Andreas erster Tag bei Annette</span>
             <span class="sub-arrow">▼</span>
         </div>
         <div class="sub-section-content" id="sub-section-8">
-            <div class="lesson-audio">
-                <div class="audio-player">
-                    <button class="audio-btn" onclick="toggleAudio(event, 'audio-8')" id="btn-audio-8">▶</button>
-                    <audio id="audio-8" preload="none"><source src="audio/09-dialog.mp3" type="audio/mpeg"></audio>
-                </div>
-                <span class="lesson-audio-label">🔊 Ascultă dialogul (MP3, după ce înregistrezi)</span>
-            </div>
-
-            <div style="background: #eff6ff; border: 2px dashed #3b82f6; padding: 12px 16px; border-radius: 8px; margin-bottom: 15px; display: flex; flex-wrap: wrap; gap: 10px; align-items: center;">
-                <button onclick="playFullDialog()" style="background:#3b82f6;color:white;border:none;padding:10px 18px;border-radius:8px;cursor:pointer;font-weight:600;">🎙️ Redă tot dialogul (TTS)</button>
-                <button onclick="stopDialog()" style="background:#ef4444;color:white;border:none;padding:10px 18px;border-radius:8px;cursor:pointer;font-weight:600;">⏹ Stop</button>
-                <small style="color:#6b7280;">Click pe 🔊 lângă orice replică pentru a o asculta individual.</small>
-            </div>
-
-            <p style="margin-bottom: 15px;"><em>Andreea sosește la cursul lui Annette pentru prima zi de practică pedagogică. Annette o întâmpină și o introduce în echipă. Dialogul folosește peste 10 prefixe din lecția 2.</em></p>
-
             <div class="andreea-note">
                 <img src="images/andreea.png" alt="Andreea" class="andreea-note-avatar">
                 <div class="andreea-note-content">
                     <div class="speaker">Andreea îți spune:</div>
-                    <div class="text">În acest dialog Annette îmi spune <strong>„Andrea"</strong> — așa se pronunță numele meu în germană (forma locală a numelui „Andreea"). În România sunt Andreea, în Germania devin Andrea. Același nume, doar pronunție germană (3 silabe: <em>An-DRE-a</em>). 🦋</div>
+                    <div class="text">În acest dialog animat, Annette îmi spune <strong>„Andrea"</strong> — așa se pronunță numele meu în germană (3 silabe: <em>An-DRE-a</em>). În România sunt Andreea, în Germania devin Andrea. Apasă ▶️ <strong>Pornește</strong> și urmărește bula vorbitorului — personajul activ pulsează verde. Poți relua orice replică individual cu butonul 🔁 din transcript. 🦋</div>
                 </div>
             </div>
 
-            <div style="background: #dbeafe; border-left: 4px solid #3b82f6; padding: 15px 20px; border-radius: 6px; margin-bottom: 10px;">
-                <p><strong style="color: #1e3a8a;">Annette:</strong> Hallo Andrea! Willkommen bei Annettes Deutschkurs! Darf ich mich <u>vorstellen</u>? Ich bin Annette, deine Mentorin. <button onclick="speakDialogLine(event, 0)" title="Ascultă" style="background:#3b82f6;color:white;border:none;border-radius:50%;width:30px;height:30px;cursor:pointer;font-size:13px;margin-left:4px;vertical-align:middle;">🔊</button></p>
-                <p style="color: #6b7280; font-style: italic; font-size: 0.9rem;">Salut, Andrea! Bun venit la cursul lui Annette! Îmi permiteți să mă prezint? Eu sunt Annette, mentora ta. (<em>sich vorstellen</em>)</p>
-            </div>
-
-            <div style="background: #f0fdf4; border-left: 4px solid #10b981; padding: 15px 20px; border-radius: 6px; margin-bottom: 10px;">
-                <p><strong style="color: #065f46;">Andrea:</strong> Hallo Annette! Ich bin Andrea. Ich habe meinen Laptop und ein Notizbuch <u>mitgebracht</u>. <button onclick="speakDialogLine(event, 1)" title="Ascultă" style="background:#10b981;color:white;border:none;border-radius:50%;width:30px;height:30px;cursor:pointer;font-size:13px;margin-left:4px;vertical-align:middle;">🔊</button></p>
-                <p style="color: #6b7280; font-style: italic; font-size: 0.9rem;">Salut, Annette! Eu sunt Andrea. Am adus laptopul și un caiet. (<em>mitbringen</em>)</p>
-            </div>
-
-            <div style="background: #dbeafe; border-left: 4px solid #3b82f6; padding: 15px 20px; border-radius: 6px; margin-bottom: 10px;">
-                <p><strong style="color: #1e3a8a;">Annette:</strong> Super. <u>Komm</u> bitte <u>mit</u>, ich zeige dir den Unterrichtsraum. <button onclick="speakDialogLine(event, 2)" title="Ascultă" style="background:#3b82f6;color:white;border:none;border-radius:50%;width:30px;height:30px;cursor:pointer;font-size:13px;margin-left:4px;vertical-align:middle;">🔊</button></p>
-                <p style="color: #6b7280; font-style: italic; font-size: 0.9rem;">Super. Vino cu mine, te rog, îți arăt sala de curs. (<em>mitkommen</em>)</p>
-            </div>
-
-            <div style="background: #f0fdf4; border-left: 4px solid #10b981; padding: 15px 20px; border-radius: 6px; margin-bottom: 10px;">
-                <p><strong style="color: #065f46;">Andrea:</strong> Gerne. Darf ich einen Kaffee <u>mitnehmen</u>? <button onclick="speakDialogLine(event, 3)" title="Ascultă" style="background:#10b981;color:white;border:none;border-radius:50%;width:30px;height:30px;cursor:pointer;font-size:13px;margin-left:4px;vertical-align:middle;">🔊</button></p>
-                <p style="color: #6b7280; font-style: italic; font-size: 0.9rem;">Cu plăcere. Pot să iau o cafea cu mine? (<em>mitnehmen</em>)</p>
-            </div>
-
-            <div style="background: #dbeafe; border-left: 4px solid #3b82f6; padding: 15px 20px; border-radius: 6px; margin-bottom: 10px;">
-                <p><strong style="color: #1e3a8a;">Annette:</strong> Natürlich! Die Küche ist da hinten. <u>Geh</u> hin, rechts ist die Maschine. <button onclick="speakDialogLine(event, 4)" title="Ascultă" style="background:#3b82f6;color:white;border:none;border-radius:50%;width:30px;height:30px;cursor:pointer;font-size:13px;margin-left:4px;vertical-align:middle;">🔊</button></p>
-                <p style="color: #6b7280; font-style: italic; font-size: 0.9rem;">Sigur! Bucătăria e în spate. Du-te acolo, în dreapta e aparatul. (<em>hingehen</em>)</p>
-            </div>
-
-            <div style="background: #f0fdf4; border-left: 4px solid #10b981; padding: 15px 20px; border-radius: 6px; margin-bottom: 10px;">
-                <p><strong style="color: #065f46;">Andrea:</strong> Danke. Wann fangen wir an? <button onclick="speakDialogLine(event, 5)" title="Ascultă" style="background:#10b981;color:white;border:none;border-radius:50%;width:30px;height:30px;cursor:pointer;font-size:13px;margin-left:4px;vertical-align:middle;">🔊</button></p>
-                <p style="color: #6b7280; font-style: italic; font-size: 0.9rem;">Mulțumesc. Când începem?</p>
-            </div>
-
-            <div style="background: #dbeafe; border-left: 4px solid #3b82f6; padding: 15px 20px; border-radius: 6px; margin-bottom: 10px;">
-                <p><strong style="color: #1e3a8a;">Annette:</strong> Um neun Uhr. Wir <u>arbeiten zusammen</u> an der ersten Lektion. <button onclick="speakDialogLine(event, 6)" title="Ascultă" style="background:#3b82f6;color:white;border:none;border-radius:50%;width:30px;height:30px;cursor:pointer;font-size:13px;margin-left:4px;vertical-align:middle;">🔊</button></p>
-                <p style="color: #6b7280; font-style: italic; font-size: 0.9rem;">La nouă. Lucrăm împreună la prima lecție. (<em>zusammenarbeiten</em>)</p>
-            </div>
-
-            <div style="background: #f0fdf4; border-left: 4px solid #10b981; padding: 15px 20px; border-radius: 6px; margin-bottom: 10px;">
-                <p><strong style="color: #065f46;">Andrea:</strong> Und wenn ich eine Frage habe? <button onclick="speakDialogLine(event, 7)" title="Ascultă" style="background:#10b981;color:white;border:none;border-radius:50%;width:30px;height:30px;cursor:pointer;font-size:13px;margin-left:4px;vertical-align:middle;">🔊</button></p>
-                <p style="color: #6b7280; font-style: italic; font-size: 0.9rem;">Și dacă am o întrebare?</p>
-            </div>
-
-            <div style="background: #dbeafe; border-left: 4px solid #3b82f6; padding: 15px 20px; border-radius: 6px; margin-bottom: 10px;">
-                <p><strong style="color: #1e3a8a;">Annette:</strong> <u>Frag</u> einfach <u>nach</u>! Ich bin deine Mentorin. Oder <u>ruf</u> mich <u>an</u>. <button onclick="speakDialogLine(event, 8)" title="Ascultă" style="background:#3b82f6;color:white;border:none;border-radius:50%;width:30px;height:30px;cursor:pointer;font-size:13px;margin-left:4px;vertical-align:middle;">🔊</button></p>
-                <p style="color: #6b7280; font-style: italic; font-size: 0.9rem;">Întreabă pur și simplu! Sunt mentora ta. Sau sună-mă. (<em>nachfragen, anrufen</em>)</p>
-            </div>
-
-            <div style="background: #f0fdf4; border-left: 4px solid #10b981; padding: 15px 20px; border-radius: 6px; margin-bottom: 10px;">
-                <p><strong style="color: #065f46;">Andrea:</strong> Perfekt. Was <u>hast</u> du heute noch <u>vor</u>? <button onclick="speakDialogLine(event, 9)" title="Ascultă" style="background:#10b981;color:white;border:none;border-radius:50%;width:30px;height:30px;cursor:pointer;font-size:13px;margin-left:4px;vertical-align:middle;">🔊</button></p>
-                <p style="color: #6b7280; font-style: italic; font-size: 0.9rem;">Perfect. Ce mai ai de gând azi? (<em>vorhaben</em>)</p>
-            </div>
-
-            <div style="background: #dbeafe; border-left: 4px solid #3b82f6; padding: 15px 20px; border-radius: 6px; margin-bottom: 10px;">
-                <p><strong style="color: #1e3a8a;">Annette:</strong> Um 17 Uhr gehen wir alle <u>zurück</u> zur Besprechung. <u>Denk</u> bitte daran <u>nach</u>, dass du deinen Stundenplan <u>mitbringst</u>. <button onclick="speakDialogLine(event, 10)" title="Ascultă" style="background:#3b82f6;color:white;border:none;border-radius:50%;width:30px;height:30px;cursor:pointer;font-size:13px;margin-left:4px;vertical-align:middle;">🔊</button></p>
-                <p style="color: #6b7280; font-style: italic; font-size: 0.9rem;">La 17 ne întoarcem cu toții la ședință. Gândește-te, te rog, să-ți aduci orarul. (<em>zurückgehen, nachdenken, mitbringen</em>)</p>
-            </div>
-
-            <div style="background: #f0fdf4; border-left: 4px solid #10b981; padding: 15px 20px; border-radius: 6px; margin-bottom: 10px;">
-                <p><strong style="color: #065f46;">Andrea:</strong> Ich <u>mache weiter</u>, dann. Bis 17 Uhr! <button onclick="speakDialogLine(event, 11)" title="Ascultă" style="background:#10b981;color:white;border:none;border-radius:50%;width:30px;height:30px;cursor:pointer;font-size:13px;margin-left:4px;vertical-align:middle;">🔊</button></p>
-                <p style="color: #6b7280; font-style: italic; font-size: 0.9rem;">Atunci continui. Pe la 17! (<em>weitermachen</em>)</p>
-            </div>
-
-            <div style="background: #dbeafe; border-left: 4px solid #3b82f6; padding: 15px 20px; border-radius: 6px; margin-bottom: 10px;">
-                <p><strong style="color: #1e3a8a;">Annette:</strong> Bis später! <button onclick="speakDialogLine(event, 12)" title="Ascultă" style="background:#3b82f6;color:white;border:none;border-radius:50%;width:30px;height:30px;cursor:pointer;font-size:13px;margin-left:4px;vertical-align:middle;">🔊</button></p>
-                <p style="color: #6b7280; font-style: italic; font-size: 0.9rem;">Pe mai târziu!</p>
-            </div>
+            <div id="dialog1-container"></div>
 
             <div class="theory-box" style="background: #dbeafe; border-color: #3b82f6; margin-top: 20px;">
                 <h4>🗝️ Verbe separabile cu prefixe din lecția 2 folosite în dialog</h4>
@@ -557,58 +478,11 @@ document.addEventListener('DOMContentLoaded', function() {
     if (container) {
         container.innerHTML = theoryHTML;
     }
+    // Injectez dialog animat ACUM (după ce dialog1-container e în DOM din theoryHTML)
+    const dlgContainer = document.getElementById('dialog1-container');
+    if (dlgContainer && typeof buildAnimatedDialog === 'function' && typeof dialog1Data !== 'undefined') {
+        dlgContainer.innerHTML = buildAnimatedDialog(dialog1Data);
+    }
 });
 
-// ============================================
-// DIALOG TTS
-// ============================================
-const dialogLines = [
-    "Hallo Andrea! Willkommen bei Annettes Deutschkurs! Darf ich mich vorstellen? Ich bin Annette, deine Mentorin.",
-    "Hallo Annette! Ich bin Andrea. Ich habe meinen Laptop und ein Notizbuch mitgebracht.",
-    "Super. Komm bitte mit, ich zeige dir den Unterrichtsraum.",
-    "Gerne. Darf ich einen Kaffee mitnehmen?",
-    "Natürlich! Die Küche ist da hinten. Geh hin, rechts ist die Maschine.",
-    "Danke. Wann fangen wir an?",
-    "Um neun Uhr. Wir arbeiten zusammen an der ersten Lektion.",
-    "Und wenn ich eine Frage habe?",
-    "Frag einfach nach! Ich bin deine Mentorin. Oder ruf mich an.",
-    "Perfekt. Was hast du heute noch vor?",
-    "Um siebzehn Uhr gehen wir alle zurück zur Besprechung. Denk bitte daran nach, dass du deinen Stundenplan mitbringst.",
-    "Ich mache weiter, dann. Bis siebzehn Uhr!",
-    "Bis später!"
-];
-
-function speakDialogLine(event, index) {
-    if (event) event.stopPropagation();
-    const line = dialogLines[index];
-    if (!line) return;
-    if ('speechSynthesis' in window) {
-        window.speechSynthesis.cancel();
-        const u = new SpeechSynthesisUtterance(line);
-        u.lang = 'de-DE';
-        u.rate = 0.9;
-        u.pitch = index % 2 === 0 ? 0.85 : 1.15;
-        window.speechSynthesis.speak(u);
-    } else {
-        alert('Browser-ul tău nu suportă Text-to-Speech.');
-    }
-}
-
-function playFullDialog() {
-    if (!('speechSynthesis' in window)) {
-        alert('Browser-ul tău nu suportă Text-to-Speech.');
-        return;
-    }
-    window.speechSynthesis.cancel();
-    dialogLines.forEach((line, i) => {
-        const u = new SpeechSynthesisUtterance(line);
-        u.lang = 'de-DE';
-        u.rate = 0.9;
-        u.pitch = i % 2 === 0 ? 0.85 : 1.15;
-        window.speechSynthesis.speak(u);
-    });
-}
-
-function stopDialog() {
-    if ('speechSynthesis' in window) window.speechSynthesis.cancel();
-}
+// Dialog logic mutat în dialogs.js (animated dialog pattern Pflege — 31 mai 2026)

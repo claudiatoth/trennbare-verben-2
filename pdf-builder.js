@@ -9,8 +9,22 @@
     function buildPDF() {
         const root = document.getElementById('pdf-content');
         if (!root) return;
-        // Refactor mai 2026 — include verbs.js (Annettes pattern)
-        root.innerHTML = buildCast() + buildTheory() + buildExercises() + buildFlashcards() + buildVerbs();
+        // Refactor mai 2026 — include verbs.js + dialog animat (Annettes pattern + Pflege dialog)
+        root.innerHTML = buildCast() + buildTheory() + buildDialog() + buildExercises() + buildFlashcards() + buildVerbs();
+    }
+
+    function buildDialog() {
+        if (typeof dialog1Data === 'undefined') return '';
+        let html = `<h1 class="chapter new-section">🎬 2. Dialog — Andreas erster Tag bei Annette</h1>
+            <div class="ex-block">
+                <div class="instruction">${dialog1Data.context}</div>
+                <div class="dialog-pdf-card">`;
+        dialog1Data.replici.forEach(r => {
+            const spkrName = r.speaker === 'andrea' ? '👩‍🎓 Andrea' : '👩‍🏫 Annette';
+            html += `<div class="reply"><span class="spkr">${r.id}. ${spkrName}:</span> <span class="de"> ${r.de}</span><br><span class="ro">🇷🇴 ${r.ro}</span></div>`;
+        });
+        html += `</div></div>`;
+        return html;
     }
 
     function buildCast() {

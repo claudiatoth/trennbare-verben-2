@@ -1,8 +1,10 @@
 # Audio pentru Trennbare Verben (Teil 2) — A2/B1
 
-## 🎙️ Vocea Claudiei (teorie — 9 MP3)
+## 🎙️ Vocea Claudiei — Teorie (8 MP3) + Dialog animat (1 MP3)
 
-Pune aici 9 MP3-uri cu **exact aceste nume**. Folderul e momentan gol — până încarci fișierele, butoanele ▶ vor afișa un mesaj „audio lipsește".
+Pune aici **8 MP3-uri pentru teorie + 1 MP3 pentru dialog**. Folderul e momentan gol — până încarci fișierele, butoanele ▶ vor afișa un mesaj „audio lipsește" (la dialog: animația merge pe timer fallback).
+
+### Teorie (8 MP3 — câte unul per subsecțiune)
 
 | # | Fișier | Subsecțiune |
 |---|---|---|
@@ -13,8 +15,15 @@ Pune aici 9 MP3-uri cu **exact aceste nume**. Folderul e momentan gol — până
 | 5 | `05-nach-weiter.mp3` | Prefixele nach- și weiter- |
 | 6 | `06-weg-zurueck.mp3` | Prefixele weg- și zurück- |
 | 7 | `07-hin-her-zusammen.mp3` | Prefixele hin- / her- / zusammen- |
-| 8 | `08-substantive.mp3` | Substantive derivate Sg + Pl (8 substantive: der Vorschlag/die Vorschläge etc.) |
-| 9 | `09-dialog.mp3` | Dialogul „Andreas erster Tag bei Annette" *(opțional — există deja TTS browser)* |
+| 8 | `08-substantive.mp3` | Substantive derivate Sg + Pl (8 substantive) |
+
+### Dialog animat (1 MP3 lung cu cele 13 replici)
+
+| Fișier | Conținut |
+|---|---|
+| `dialog-01.mp3` | „Andreas erster Tag bei Annette" — toate 13 replici Annette + Andrea într-un singur fișier. Lungime estimată: ~65 secunde. Animația din pagină sincronizează automat pe `currentTime` — vezi `dialogs.js` câmpul `start` (în secunde) pentru fiecare replică. |
+
+**Cum să înregistrezi `dialog-01.mp3`**: citește în ordine cele 13 replici din `dialogs.js` câmpul `de`, fără pauze lungi (1-2 sec între replici e ok). Audio normal de la 0 la final — animația sare automat la replica potrivită pe baza timpilor `start` predefiniți. Dacă durata reală diferă semnificativ, ajustez `start` în `dialogs.js`.
 
 ## 📥 Cum încarci fișierele
 
