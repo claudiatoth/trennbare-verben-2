@@ -119,7 +119,7 @@ const theoryHTML = `
                     <tr><td class="verb">zugeben</td><td>a admite / a recunoaște</td><td><em>Er gibt seinen Fehler zu.</em></td></tr>
                 </tbody>
             </table>
-            <div class="theory-box" style="background: #fef3c7; border-color: #f59e0b;">
+            <div class="theory-box" style="background: #F5F0E8; border-color: #D4A574;">
                 <h4>⚠️ Atenție — zu are 3 roluri în germană</h4>
                 <ul>
                     <li><strong>Prefix separabil</strong> (zuhören): se separă. „Ich <u>höre</u> dir <u>zu</u>."</li>
@@ -302,7 +302,7 @@ const theoryHTML = `
                 <span class="lesson-audio-label">🔊 Ascultă secțiunea</span>
             </div>
 
-            <div class="theory-box" style="background: #fef3c7; border-color: #f59e0b;">
+            <div class="theory-box" style="background: #F5F0E8; border-color: #D4A574;">
                 <h4>⚠️ Regula importantă pentru hin / her</h4>
                 <p><strong>hin</strong> = mișcare <strong>DE LA</strong> vorbitor (undeva acolo).</p>
                 <p><strong>her</strong> = mișcare <strong>CĂTRE</strong> vorbitor (aici, la mine).</p>
@@ -414,13 +414,13 @@ const theoryHTML = `
                         </tr>
                         <tr>
                             <td class="nomen">die Rückkehr</td>
-                            <td class="nomen"><em style="color:#9ca3af;">(nur Singular)</em></td>
+                            <td class="nomen"><em style="color:#8a8175;">(nur Singular)</em></td>
                             <td class="ro-text">întoarcerea (substantiv abstract, fără plural)</td>
                             <td><em>zurückkehren</em> (a se întoarce)</td>
                         </tr>
                         <tr>
                             <td class="nomen">die Zusammenarbeit</td>
-                            <td class="nomen"><em style="color:#9ca3af;">(nur Singular)</em></td>
+                            <td class="nomen"><em style="color:#8a8175;">(nur Singular)</em></td>
                             <td class="ro-text">colaborarea (substantiv abstract, fără plural)</td>
                             <td><em>zusammenarbeiten</em> (a colabora)</td>
                         </tr>

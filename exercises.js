@@ -46,7 +46,7 @@ function buildEx1() {
                 <div class="input-group">
                     <label>${item.sentence}</label>
                     <input type="text" id="ex1-${item.id}" placeholder="prefix">
-                    <small style="color: #6b7280; font-style: italic;">💬 ${item.hint}</small>
+                    <small style="color: #5A5147; font-style: italic;">💬 ${item.hint}</small>
                 </div>
                 <div class="feedback" id="ex1-f${item.id}"></div>
             </div>
@@ -346,7 +346,7 @@ function buildEx6() {
                 <div class="input-group">
                     <label>${item.sentence}</label>
                     <input type="text" id="ex6-${item.id}" placeholder="Partizip II">
-                    <small style="color: #6b7280; font-style: italic;">💬 ${item.hint}</small>
+                    <small style="color: #5A5147; font-style: italic;">💬 ${item.hint}</small>
                 </div>
                 <div class="feedback" id="ex6-f${item.id}"></div>
             </div>
