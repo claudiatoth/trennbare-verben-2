@@ -37,7 +37,7 @@ const theoryHTML = `
                     <li>Cu <strong>„zu"</strong>: zu se pune ÎNTRE prefix și verb (aufzustehen).</li>
                 </ul>
             </div>
-            <div class="theory-box" style="background: #dbeafe; border-color: #3b82f6;">
+            <div class="theory-box" style="background: #dbeafe; border-color: #D4A574;">
                 <h4>🎯 Ce învățăm în lecția 2</h4>
                 <p>Extindem vocabularul cu alte <strong>9 prefixe separabile</strong> foarte utile la A2/B1:</p>
                 <ul>
@@ -169,7 +169,7 @@ const theoryHTML = `
                     <tr><td class="verb">mitarbeiten</td><td>a colabora / a lucra împreună</td><td><em>Wir arbeiten am Projekt mit.</em></td></tr>
                 </tbody>
             </table>
-            <div class="theory-box" style="background: #dbeafe; border-color: #3b82f6;">
+            <div class="theory-box" style="background: #dbeafe; border-color: #D4A574;">
                 <h4>💡 Frază foarte utilă</h4>
                 <p><strong>„Kommst du mit?"</strong> = Vii cu noi/mine? — una dintre cele mai frecvente întrebări uzuale în germană.</p>
             </div>
@@ -428,7 +428,7 @@ const theoryHTML = `
                 </table>
             </div>
 
-            <div class="theory-box" style="background: #dbeafe; border-color: #3b82f6;">
+            <div class="theory-box" style="background: #dbeafe; border-color: #D4A574;">
                 <h4>💡 Pattern de formare</h4>
                 <ul>
                     <li>Prefix + verb la infinitiv → substantiv (gen masculin): <em>vorschlagen → der Vorschlag</em>, <em>vortragen → der Vortrag</em>.</li>
@@ -456,7 +456,7 @@ const theoryHTML = `
 
             <div id="dialog1-container"></div>
 
-            <div class="theory-box" style="background: #dbeafe; border-color: #3b82f6; margin-top: 20px;">
+            <div class="theory-box" style="background: #dbeafe; border-color: #D4A574; margin-top: 20px;">
                 <h4>🗝️ Verbe separabile cu prefixe din lecția 2 folosite în dialog</h4>
                 <p><strong>sich vorstellen</strong> (a se prezenta), <strong>mitbringen</strong> (a aduce cu), <strong>mitkommen</strong> (a veni cu), <strong>mitnehmen</strong> (a lua cu), <strong>hingehen</strong> (a se duce acolo), <strong>zusammenarbeiten</strong> (a colabora), <strong>nachfragen</strong> (a întreba), <strong>anrufen</strong> (a suna), <strong>vorhaben</strong> (a plănui), <strong>zurückgehen</strong> (a merge înapoi), <strong>nachdenken</strong> (a reflecta), <strong>weitermachen</strong> (a continua).</p>
             </div>
